@@ -44,7 +44,9 @@
 }
 .wrapper .navbar .container .navbar_search .search_bar::before {
   position: absolute;
-  content: "1";
+  content: "111";
   color: black;
   background-color: black;
+  width: 10px;
+  height: 10px;
 }
