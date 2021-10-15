@@ -49,15 +49,6 @@ $main_font: 'Roboto';
           box-shadow: 0px 12px 24px rgba(5, 16, 55, 0.04);
           border-radius: 60px;
           padding: 20px;
-
-          &::before {
-            position: absolute;
-            content: '111';
-            color: black;
-            background-color: black;
-            width: 10px;
-            height: 10px;
-          }
         }
       }
     }
