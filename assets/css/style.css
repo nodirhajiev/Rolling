@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper .navbar {
+  position: relative;
+}
+.wrapper .navbar .container {
+  padding: 0 48px;
+  margin: 0;
+}
+.wrapper .navbar .container .navbar_logo .navbar_logo_text h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 27px;
+  color: #000000;
+}
+.wrapper .navbar .container .navbar_search {
+  position: absolute;
+  display: flex;
+}
+.wrapper .navbar .container .navbar_search .search_icon img {
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+}
+.wrapper .navbar .container .navbar_search .search_bar {
+  position: absolute;
+  width: 471px;
+  height: 56px;
+  left: 239px;
+  top: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e5ea;
+  box-sizing: border-box;
+  box-shadow: 0px 12px 24px rgba(5, 16, 55, 0.04);
+  border-radius: 60px;
+  padding: 20px;
+}
+.wrapper .navbar .container .navbar_search .search_bar::before {
+  position: absolute;
+  content: "1";
+  color: black;
+  background-color: black;
+}
