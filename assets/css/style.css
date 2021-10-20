@@ -6,14 +6,33 @@
   font-family: "Roboto";
 }
 
-.wrapper .navbar {
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .container .navbar {
+  display: flex;
   position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.wrapper .navbar .container {
-  padding: 0 48px;
-  margin: 0;
+.wrapper .container .navbar .navbar_logo .navbar_logo_text {
+  margin-right: 104px;
 }
-.wrapper .navbar .container .navbar_logo .navbar_logo_text h2 {
+.wrapper .container .navbar .navbar_logo .navbar_logo_text h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
@@ -21,14 +40,11 @@
   line-height: 27px;
   color: #000000;
 }
-.wrapper .navbar .container .navbar_search {
-  position: absolute;
+.wrapper .container .navbar .navbar_search {
   width: 471px;
   height: 56px;
-  left: 239px;
-  top: 20px;
   background: #ffffff;
-  border: 1px solid #e5e5ea;
+  border: 2px solid #e5e5ea;
   box-sizing: border-box;
   box-shadow: 0px 12px 24px rgba(5, 16, 55, 0.04);
   border-radius: 60px;
@@ -37,15 +53,21 @@
   align-items: center;
   cursor: pointer;
   overflow: hidden;
+  transition: 0.4s;
 }
-.wrapper .navbar .container .navbar_search .search_icon img {
+.wrapper .container .navbar .navbar_search:hover {
+  border: 2px solid #007aff;
+  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+}
+.wrapper .container .navbar .navbar_search .search_icon img {
   width: 24px;
   height: 24px;
   left: 0px;
   top: 0px;
   margin-left: 24px;
 }
-.wrapper .navbar .container .navbar_search .navbar_search_field .search_bar {
+.wrapper .container .navbar .navbar_search .navbar_search_field .search_bar {
   font-family: "Roboto";
   font-weight: 500;
   margin-left: 12px;
@@ -56,4 +78,205 @@
   width: 100vw;
   height: 100vh;
   outline: none;
+}
+.wrapper .container .navbar .navbar_menu {
+  margin-left: 121px;
+}
+.wrapper .container .navbar .navbar_menu .navbar_menu_text {
+  margin: 12px;
+}
+.wrapper .container .navbar .navbar_menu .navbar_menu_text a {
+  padding: 0px 10px 0 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  transition: 0.4s;
+  text-decoration: none;
+  outline: 0;
+  border-bottom: solid 2px transparent;
+}
+.wrapper .container .navbar .navbar_menu .navbar_menu_text a:hover {
+  border-bottom: 2px solid #007aff;
+  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+}
+.wrapper .container .navbar .navbar_icons {
+  display: flex;
+}
+.wrapper .container .navbar .navbar_icons .spark_icon_btn {
+  margin-right: 36px;
+}
+.wrapper .container .navbar .navbar_icons .spark_icon_btn img {
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 0.5px solid #e5e5ea;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(5, 16, 55, 0.1);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s;
+}
+.wrapper .container .navbar .navbar_icons .spark_icon_btn img:hover {
+  background-color: #007aff;
+  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+}
+.wrapper .container .navbar .navbar_icons .navbar_btn {
+  margin-right: 48px;
+}
+.wrapper .container .navbar .navbar_icons .navbar_btn button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #007aff;
+  position: absolute;
+  width: 151px;
+  height: 47px;
+  background: rgba(0, 122, 255, 0.12);
+  border: 0.5px solid rgba(0, 122, 255, 0.12);
+  border-radius: 33px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.wrapper .container .navbar .navbar_icons .navbar_btn button:hover {
+  background: #007aff;
+  color: white;
+  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+}
+.wrapper .container .top_content {
+  position: relative;
+  display: flex;
+}
+.wrapper .container .top_content .top_img {
+  margin-right: 23px;
+}
+.wrapper .container .top_content .top_img img {
+  width: 889px;
+  height: 490px;
+  border-radius: 12px 12px 0px 0px;
+}
+.wrapper .container .top_content .top_right_content {
+  width: 432px;
+  height: 490px;
+  background: #ffffff;
+  box-shadow: 0px 18px 34px rgba(5, 16, 55, 0.15);
+  border-radius: 12px;
+}
+.wrapper .container .top_content .top_right_content .top_title_content {
+  margin: 36px 48px;
+}
+.wrapper .container .top_content .top_right_content .top_title_content .top_title {
+  margin-bottom: 12px;
+}
+.wrapper .container .top_content .top_right_content .top_title_content .top_user {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+.wrapper .container .top_content .bid {
+  display: flex;
+  margin: 0 36px 0 34px;
+}
+.wrapper .container .top_content .bid .bid_title {
+  margin-bottom: 12px;
+}
+.wrapper .container .top_content .bid .coin {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.wrapper .container .top_content .bid .usd {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 112%;
+  color: #8e8e93;
+}
+.wrapper .container .top_content .bid .current_bid .bid_title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 12px;
+}
+.wrapper .container .top_content .bid .current_bid .coin {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+}
+.wrapper .container .top_content .bid .current_bid .usd {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 112%;
+  color: #8e8e93;
+}
+.wrapper .container .top_content .bid .bid_line {
+  border-left: 2px solid #c7c7cc;
+  transform: rotate(0deg);
+  margin: 0px 24px;
+}
+.wrapper .container .top_content .bid .auction_timer .auction_time {
+  display: flex;
+}
+.wrapper .container .top_content .bid .auction_timer .auction_time .auc_times:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+.wrapper .container .top_content .top_btn {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .container .top_content .top_btn button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  width: 360px;
+  height: 56px;
+  background: #007aff;
+  border-radius: 45px;
+  margin: 20px 0px;
+  border: transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.wrapper .container .top_content .top_btn button:hover {
+  background: transparent;
+  color: #007aff;
+  border: 2px solid #007aff;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.wrapper .container .top_content .top_btn a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #007aff;
+  border-bottom: 2px transparent;
+}
+.wrapper .container .top_content .top_btn a:hover {
+  border-bottom: 2px solid #007aff;
+  transition: 0.4s ease-in-out;
 }
