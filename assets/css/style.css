@@ -261,12 +261,12 @@ a {
   color: #ffffff;
   cursor: pointer;
   transition: 0.4s;
+  border: 2px solid transparent;
 }
 .wrapper .container .top_content .top_btn button:hover {
   background: transparent;
   color: #007aff;
   border: 2px solid #007aff;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .wrapper .container .top_content .top_btn a {
   font-style: normal;
@@ -275,8 +275,8 @@ a {
   line-height: 18px;
   color: #007aff;
   border-bottom: 2px transparent;
+  transition: all 0.4s;
 }
 .wrapper .container .top_content .top_btn a:hover {
   border-bottom: 2px solid #007aff;
-  transition: 0.4s ease-in-out;
 }
