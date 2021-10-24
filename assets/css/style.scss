@@ -25,15 +25,22 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+
   .container {
     .navbar {
       display: flex;
       position: relative;
       margin-top: 20px;
       margin-bottom: 20px;
+
       .navbar_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         .navbar_logo_text {
           margin-right: 104px;
+
           h2 {
             font-family: $main_font;
             font-style: normal;
@@ -44,8 +51,9 @@ a {
           }
         }
       }
+
       .navbar_search {
-        // position: absolute;
+        position: relative;
         width: 471px;
         height: 56px;
         background: #ffffff;
@@ -75,7 +83,9 @@ a {
             margin-left: 24px;
           }
         }
+
         .navbar_search_field {
+
           .search_bar {
             font-family: $main_font;
             font-weight: 500;
@@ -84,16 +94,18 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100vw;
-            height: 100vh;
+            width: 400px;
             outline: none;
           }
         }
       }
+
       .navbar_menu {
         margin-left: 121px;
+
         .navbar_menu_text {
           margin: 12px;
+
           a {
             padding: 0px 10px 0 10px;
             font-style: normal;
@@ -114,8 +126,10 @@ a {
           }
         }
       }
+
       .navbar_icons {
         display: flex;
+
         .spark_icon_btn {
           margin-right: 36px;
 
@@ -138,8 +152,10 @@ a {
             }
           }
         }
+
         .navbar_btn {
           margin-right: 48px;
+
           button {
             font-family: $main_font;
             font-style: normal;
@@ -170,14 +186,17 @@ a {
     .top_content {
       position: relative;
       display: flex;
+
       .top_img {
         margin-right: 23px;
+
         img {
           width: 889px;
           height: 490px;
           border-radius: 12px 12px 0px 0px;
         }
       }
+
       .top_right_content {
         width: 432px;
         height: 490px;
@@ -193,19 +212,28 @@ a {
           }
 
           .top_user {
-            display: flex;
-            flex-direction: row;
-            align-content: center;
-            align-items: center;
+
+            .user_icon {
+              display: flex;
+
+              .user_name {
+                display: flex;
+                align-items: center;
+                margin-left: 8px;
+              }
+            }
           }
         }
       }
+
       .bid {
         display: flex;
         margin: 0 36px 0 34px;
+
         .bid_title {
           margin-bottom: 12px;
         }
+
         .coin {
           font-style: normal;
           font-weight: 500;
@@ -222,15 +250,16 @@ a {
           line-height: 112%;
           color: #8e8e93;
         }
+
         .current_bid {
           .bid_title {
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
-            line-height: 150%;
             color: #000000;
             margin-bottom: 12px;
           }
+
           .coin {
             font-style: normal;
             font-weight: 500;
@@ -238,6 +267,7 @@ a {
             line-height: 100%;
             color: #000000;
           }
+
           .usd {
             font-style: normal;
             font-weight: 500;
@@ -246,20 +276,24 @@ a {
             color: #8e8e93;
           }
         }
+
         .bid_line {
           border-left: 2px solid #c7c7cc;
           transform: rotate(0deg);
           margin: 0px 24px;
         }
+
         .auction_timer {
           .auction_time {
             display: flex;
+
             .auc_times:not(:last-child) {
               margin: 0 20px 0 0;
             }
           }
         }
       }
+
       .top_btn {
         margin-top: 72px;
         display: flex;
@@ -293,6 +327,7 @@ a {
             border: 2px solid #007aff;
           }
         }
+
         a {
           font-style: normal;
           font-weight: 500;
@@ -304,6 +339,148 @@ a {
 
           &:hover {
             border-bottom: 2px solid #007aff;
+          }
+        }
+      }
+    }
+
+    .live_auctions {
+      .auction_titles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+        margin-top: 90px;
+
+        h2 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 28px;
+          line-height: 129%;
+          color: #000000;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 140%;
+          color: #8E8E93;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+            color: #000;
+          }
+        }
+      }
+
+      .auction_cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .auc_card {
+          width: 312px;
+          border: 1px solid #E6E6E6;
+          box-sizing: border-box;
+          border-radius: 16px;
+
+          .card_contents {
+            position: relative;
+
+            img {
+              transform: translateX(-1px);
+              border-radius: 16px 16px 0px 0px;
+            }
+
+            p {
+              position: absolute;
+              left: 61.22%;
+              right: 5.13%;
+              top: 3.59%;
+              bottom: 88.34%;
+              background: rgba(255, 255, 255, 0.6);
+              box-shadow: 0px 10px 30px rgba(5, 16, 55, 0.15);
+              border-radius: 30px;
+            }
+
+            .timer {
+
+              p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 12px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                color: #2C2C2E;
+              }
+            }
+
+
+          }
+
+          .card_bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            h3 {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 28px;
+              color: #000000;
+              margin-bottom: 48px;
+              margin-left: 20px;
+              margin-right: 20px;
+              margin-top: 16px;
+            }
+
+            .h3 {
+              margin-bottom: 20px;
+            }
+
+            .card_bottom_cont {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              margin-left: 20px;
+              margin-bottom: 20px;
+
+              .user {
+                display: flex;
+                align-items: center;
+
+                p {
+                  margin-left: 8px;
+                }
+              }
+
+              .user_bid {
+                margin-right: 20px;
+
+                p:first-child {
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #8E8E93;
+                  margin: 6px 0px;
+                }
+
+                p:last-child {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 20px;
+                  line-height: 24px;
+                  color: #000000;
+                }
+              }
+            }
           }
         }
       }

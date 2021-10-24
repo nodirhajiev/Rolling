@@ -29,6 +29,11 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.wrapper .container .navbar .navbar_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .wrapper .container .navbar .navbar_logo .navbar_logo_text {
   margin-right: 104px;
 }
@@ -41,6 +46,7 @@ a {
   color: #000000;
 }
 .wrapper .container .navbar .navbar_search {
+  position: relative;
   width: 471px;
   height: 56px;
   background: #ffffff;
@@ -75,8 +81,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 400px;
   outline: none;
 }
 .wrapper .container .navbar .navbar_menu {
@@ -175,11 +180,13 @@ a {
 .wrapper .container .top_content .top_right_content .top_title_content .top_title {
   margin-bottom: 12px;
 }
-.wrapper .container .top_content .top_right_content .top_title_content .top_user {
+.wrapper .container .top_content .top_right_content .top_title_content .top_user .user_icon {
   display: flex;
-  flex-direction: row;
-  align-content: center;
+}
+.wrapper .container .top_content .top_right_content .top_title_content .top_user .user_icon .user_name {
+  display: flex;
   align-items: center;
+  margin-left: 8px;
 }
 .wrapper .container .top_content .bid {
   display: flex;
@@ -207,7 +214,6 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 150%;
   color: #000000;
   margin-bottom: 12px;
 }
@@ -279,4 +285,119 @@ a {
 }
 .wrapper .container .top_content .top_btn a:hover {
   border-bottom: 2px solid #007aff;
+}
+.wrapper .container .live_auctions .auction_titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+  margin-top: 90px;
+}
+.wrapper .container .live_auctions .auction_titles h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  color: #000000;
+}
+.wrapper .container .live_auctions .auction_titles p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #8E8E93;
+  cursor: pointer;
+}
+.wrapper .container .live_auctions .auction_titles p:hover {
+  text-decoration: underline;
+  color: #000;
+}
+.wrapper .container .live_auctions .auction_cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card {
+  width: 312px;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_contents {
+  position: relative;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_contents img {
+  transform: translateX(-1px);
+  border-radius: 16px 16px 0px 0px;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_contents p {
+  position: absolute;
+  left: 61.22%;
+  right: 5.13%;
+  top: 3.59%;
+  bottom: 88.34%;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 10px 30px rgba(5, 16, 55, 0.15);
+  border-radius: 30px;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_contents .timer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2C2C2E;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_bottom h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 48px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 16px;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_bottom .h3 {
+  margin-bottom: 20px;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_bottom .card_bottom_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_bottom .card_bottom_cont .user {
+  display: flex;
+  align-items: center;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_bottom .card_bottom_cont .user p {
+  margin-left: 8px;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_bottom .card_bottom_cont .user_bid {
+  margin-right: 20px;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_bottom .card_bottom_cont .user_bid p:first-child {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8E8E93;
+  margin: 6px 0px;
+}
+.wrapper .container .live_auctions .auction_cards .auc_card .card_bottom .card_bottom_cont .user_bid p:last-child {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
 }
