@@ -23,6 +23,9 @@ a {
   align-items: center;
   justify-content: center;
 }
+.wrapper .container {
+  /* AUCTION & FEATURES CARD - BEGIN */
+}
 .wrapper .container .navbar {
   display: flex;
   position: relative;
@@ -307,6 +310,7 @@ a {
   line-height: 140%;
   color: #8E8E93;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .wrapper .container .live_auctions .auction_titles p:hover {
   text-decoration: underline;
@@ -322,6 +326,7 @@ a {
   border: 1px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 16px;
+  margin-bottom: 36px;
 }
 .wrapper .container .live_auctions .auction_cards .auc_card .card_contents {
   position: relative;
@@ -400,4 +405,36 @@ a {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+}
+.wrapper .container .live_auctions .auction_cards .featured {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.wrapper .container .live_auctions .more_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container .live_auctions .more_btn button {
+  padding: 16px 64px;
+  background: transparent;
+  border: 1px solid #AEAEB2;
+  border-radius: 48px;
+  box-sizing: border-box;
+  width: 208px;
+  height: 56px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.wrapper .container .live_auctions .more_btn button:hover {
+  color: #fff;
+  background: #007aff;
+  border: 1px solid #007aff;
 }

@@ -14,7 +14,7 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
   // Output the result in an element with id="demo"
-  document.querySelectorAll('#countdown').innerHTML =
+  document.querySelector('#countdown').innerHTML =
     hours + ':' + minutes + ':' + seconds + ' left'
 
   // If the count down is over, write some text
@@ -23,3 +23,49 @@ var x = setInterval(function () {
     document.getElementById('demo').innerHTML = 'EXPIRED'
   }
 }, 1000)
+
+var upgradeTime = 172801
+var seconds = upgradeTime
+function timer() {
+  var days = Math.floor(seconds / 24 / 60 / 60)
+  var hoursLeft = Math.floor(seconds - days * 86400)
+  var hours = Math.floor(hoursLeft / 3600)
+  var minutesLeft = Math.floor(hoursLeft - hours * 3600)
+  var minutes = Math.floor(minutesLeft / 60)
+  var remainingSeconds = seconds % 60
+  function pad(n) {
+    return n < 10 ? '0' + n : n
+  }
+  document.querySelectorAll('countdown').innerHTML =
+    pad(hours) + ':' + pad(minutes) + ':' + pad(remainingSeconds) + ' left'
+  if (seconds == 0) {
+    clearInterval(countdownTimer)
+    document.querySelectorAll('countdown').innerHTML = 'Completed'
+  } else {
+    seconds--
+  }
+}
+var countdownTimer = setInterval('timer()', 1000)
+
+// var upgradeTime = 172801
+// var seconds = upgradeTime
+// function timer() {
+//   var days = Math.floor(seconds / 24 / 60 / 60)
+//   var hoursLeft = Math.floor(seconds - days * 86400)
+//   var hours = Math.floor(hoursLeft / 3600)
+//   var minutesLeft = Math.floor(hoursLeft - hours * 3600)
+//   var minutes = Math.floor(minutesLeft / 60)
+//   var remainingSeconds = seconds % 60
+//   function pad(n) {
+//     return n < 10 ? '0' + n : n
+//   }
+//   document.querySelector('#countdown').innerHTML =
+//     pad(hours) + ':' + pad(minutes) + ':' + pad(remainingSeconds) + ' left'
+//   if (seconds == 0) {
+//     clearInterval(countdownTimer)
+//     document.querySelectorAll('#countdown').innerHTML = 'Completed'
+//   } else {
+//     seconds--
+//   }
+// }
+// var countdownTimer = setInterval('timer()', 1000)
